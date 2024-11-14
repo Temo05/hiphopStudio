@@ -1,0 +1,152 @@
+.informatSpace {
+  width: 100%;
+  height: 600px;
+}
+
+.boxesSpace {
+  width: 100%;
+  height: 500px;
+  margin: 7em 0 0 0;
+}
+
+.intro {
+  animation: fade-up 1.4s;
+}
+
+.informationalBoxes {
+  width: 18em;
+  height: 100%;
+  background-color: #f3f6fe;
+  margin: 0 0 0 4.5em;
+  border: none;
+  border-radius: 2em;
+  display: inline-flex;
+  box-shadow: 0 0 20px black, 0 0 0px black;
+  align-items: end;
+}
+
+.mainInfo {
+  text-align: center;
+  height: 50%;
+  width: 100%;
+  color: white;
+}
+
+.calendar .mainInfo {
+  margin-top: 20px;
+}
+
+.mainInfo h1 {
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px #001a63, 0 0 0px #001a63;
+}
+
+.mainInfo p {
+  font-weight: 700;
+  text-shadow: 0 0 10px #001a63, 0 0 0px #001a63;
+}
+
+.mainInfo button {
+  background-color: #fff;
+  border: 1.8px solid white;
+  color: #001a63;
+  width: 10em;
+  height: 2.6em;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #001a63, 0 0 0px #001a63;
+}
+
+.mainInfo button:hover {
+  background-color: white;
+  transform: translateY(-2px);
+  transition: 0.5s;
+}
+
+.photo {
+  background: url("../../assets/images/5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.videos {
+  background: url("../../assets/images/6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calendar {
+  background: url("../../assets/images/7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.team {
+  background: url("../../assets/images/8.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0.6;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .informationalBoxes {
+    margin: 0 0 5em 4.5em;
+  }
+  .boxesSpace {
+    height: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .informationalBoxes {
+    flex-direction: column;
+    margin-left: 13%;
+  }
+  .mainInfo {
+    margin-top: 140%;
+  }
+  .photo {
+    background-position: 50%;
+  }
+  .video {
+    background-position-y: 50% !important;
+  }
+  .calendar {
+    background-position-x: 40%;
+  }
+  .calendar .mainInfo {
+    margin-top: 125%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 840px) {
+  .photo {
+    background-position: 50%;
+  }
+  .video {
+    background-position-y: 50% !important;
+  }
+  .calendar {
+    background-position-x: 40%;
+  }
+  .calendar .mainInfo {
+    margin-top: 125%;
+  }
+}
+@media screen and (min-width: 840px) and (max-width: 1460px) {
+  .informationalBoxes {
+    margin-bottom: 10%;
+    margin-right: 10%;
+  }
+}

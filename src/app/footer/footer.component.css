@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  margin: 2em 0 0 0;
+  background-color: #666279;
+  color: #cac5df;
+  justify-content: center;
+  text-align: center;
+  margin-top: auto;
+  position: flow;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  left: 0;
+  bottom: 0;
+}
+
+.footer h1 {
+  font-size: 1em;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .footer {
+    margin-top: 550%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 840px) {
+  .footer {
+    margin-top: 100%;
+  }
+}
+@media screen and (min-width: 840px) and (max-width: 1460px) {
+  .footer {
+    margin-top: 70%;
+  }
+}
